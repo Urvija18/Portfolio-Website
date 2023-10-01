@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <nav class="h-nav">
+        <div class="left">My Portfolio</div>
+        <div class="right v-class">
+          <ul>
+            <li><a href="#first_section">Home</a></li>
+            <li><a href="#second_section">About</a></li>
+            <li><a href="#third_section">Projects</a></li>
+            <li><a href="#fourth_section">Contact</a></li>
+          </ul>
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="first_section">
+        <div class="left_section">
+          <img src="my-photo.jpeg" alt="My photo" />
+        </div>
+        <div class="right_section">
+          Hi, my name is <span>Urvija Rai.</span> <br />I am a <br />
+          <span id="element"></span>
+          <div id="ele">
+            <a class="cv" href="resume.pdf" download="resume.pdf"
+              >Download My Resume</a
+            >
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="second_section">
+        <h1>About Me</h1>
+        <div class="about">
+          Solved over <span class="col">750+</span> problems on various coding
+          platforms.<br />
+          Pupil <span class="col">@Codeforces</span> & 1533 (max rating)
+          <span class="col">@Codechef.</span><br />
+          Longest streak (100) <span class="col">@Gfg.</span><br />
+          Winner @Zonal level of
+          <span class="col">Mathematics SOF Olympiad, 2015.</span><br />
+          Winner @School level of
+          <span class="col">Mathematics CPS Olympiad, 2017.</span><br />
+          Winner as a team of <span class="col">Tech-Rise Event</span>, IEI,
+          KNIT, 2021.<br />
+          Co-founder of <span class="col">BELLATRIX-</span> Community based on
+          ensuring equal access of technology irrespective of gender.
+        </div>
+      </section>
+      <hr />
+      <section id="third_section">
+        <h1>Projects</h1>
+        <div class="project">
+          <h4>Sorting Visualizer</h4>
+          <p>
+            This is a Html, CSS, and Javascript based project.<br />This project
+            helps one to visualize the various sorting techniques used in DSA.
+            It is easy to learn by visualization rather than working upon
+            complex source codes in different programming languages.
+          </p>
+        </div>
+        <div class="project">
+          <h4>Snake Game</h4>
+          <p>
+            This is a Java- based project.<br />
+            It is a game in which a snake eats a ball- shaped food and gets
+            energy and its speed increases. If the snake moves out of a pre-
+            decided area, the game is over and the score of the player will be
+            displayed.
+          </p>
+        </div>
+        <div class="project">
+          <h4>Student Result Management System</h4>
+          <p>
+            This project is developed in Html, CSS, Javascript and Bootstrap.<br />It
+            is to make easy to check the grade of student using online system.
+            The system contains The Admin and The User. The admin can manage
+            each and every record while the user can be the teacher or the
+            student having access of some records.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section id="fourth_section">
+        <h1>Contact Form</h1>
+        <p>
+          Enter your name and email id below to get the latest information about
+          my projects and activities.
+        </p>
+        <form action="">
+          <h4>Name</h4>
+          <input type="text" placeholder="Enter your full name" />
+          <h4>Email</h4>
+          <input type="email" placeholder="Enter your email id" />
+          <br />
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+      <section class="section_fifth">
+        <h3>Contact Me:</h3>
+        <div class="align">
+          <div class="mail">
+            <a href="mail to:raiurvija@gmail.com?subject=no subject"
+              ><img src="mail-logo.png"
+            /></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/urvija-rai-367647218"
+              ><img src="linkedin-logo.jpg"
+            /></a>
+          </div>
+          <div class="whatsapp">
+            <a href="https://wa.me/9118404665"
+              ><img src="whatsapp-logo.png"
+            /></a>
+          </div>
+          <div class="telegram">
+            <a href="https://t.me/Urvija18"><img src="Telegram-logo.png" /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Competitive Programmer.",
+          "Web Developer.",
+          "Content Writer.",
+          "Web Designer.",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    <script src="resp.js"></script>
+  </body>
+</html>
